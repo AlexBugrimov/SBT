@@ -1,3 +1,5 @@
+![СберБанк](https://github.com/specialistAplana/SBT/blob/master/src/main/resources/images/SberbankLogotip.jpg)
+---
 **Тестовое задание:**
 ---
 1. Перейти на страницу [sberbank.ru](http://www.sberbank.ru)
@@ -11,5 +13,4 @@
 ---
 ![Результаты прогона](https://github.com/specialistAplana/SBT/blob/master/src/main/resources/images/ResultTest.jpg)
 
----
-![СберБанк](https://github.com/specialistAplana/SBT/blob/master/src/main/resources/images/SberbankLogotip.jpg)
+
