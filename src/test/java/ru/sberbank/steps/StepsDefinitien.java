@@ -15,7 +15,7 @@ public class StepsDefinitien {
         driver = new Driver();
     }
 
-    @И("^Он переходит на страницу \"([^\"]*)\"$")
+    @И("^переходит на страницу \"([^\"]*)\"$")
     public void goToPage(String site) throws Throwable {
         driver.openSite(site);
         page = new MainPage(driver.get());
@@ -31,12 +31,12 @@ public class StepsDefinitien {
         page.inputValueInFieldSearchRegion(value);
     }
 
-    @И("^Он выбирает его$")
+    @И("^выбирает его из появившегося списка$")
     public void select() throws Throwable {
         page.selectValueRegion();
     }
 
-    @Если("^Пользователь проверяет выбранный регион \"([^\"]*)\"$")
+    @Если("^на основной странице выбран регион \"([^\"]*)\"$")
     public void assertRegion(String region) throws Throwable {
         Assert.assertTrue("Регион не корректный", page.valueAttributRegion("title").equalsIgnoreCase(region));
     }
@@ -46,7 +46,7 @@ public class StepsDefinitien {
         page.scrollToSocialList();
     }
 
-    @И("^Он проверяет иконки социальных сетей:$")
+    @И("^проверяет иконки социальных сетей:$")
     public void checkIcons(List<String> resources) throws Throwable {
         List<String> items = page.valuesAttributSocialItem("href");
         for (String item : items) {
